@@ -2,14 +2,15 @@
 // set max individual actions greater than default [10]
 require('events').EventEmitter.defaultMaxListeners = 20;
 
-// require the discord.js module
+// pre-load the apropriates
 const Discord = require('discord.js');
+require('dotenv').config();
 
 // create a new Discord client
 const client = new Discord.Client();
 
 // login to Discord with your app's token
-client.login('NzMxNDAwMzY4ODgxNDAxOTA2.Xws-3g.guIJrBsz1D4GXFOOeTvZNZfT_dQ');
+client.login('NzMxNDAwMzY4ODgxNDAxOTA2.XwlfrA.9hpwuvQIEQRcMUHj20yMSJo5wiU');
 
 // import files
 const fun = require("./Cooked_code/Fun/fun")
