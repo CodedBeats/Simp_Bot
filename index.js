@@ -4,7 +4,9 @@ require('events').EventEmitter.defaultMaxListeners = 20;
 
 // pre-load the apropriates
 const Discord = require('discord.js');
-require('dotenv').config();
+const {token} = require("./config.json")
+/* require('dotenv').config(); */
+
 
 // create a new Discord client
 const client = new Discord.Client();
@@ -46,7 +48,9 @@ client.on('ready', () => {
 });
 
 //login using bot token from env
-client.login(process.env.TOKEN);
+client.login(token)
+/* client.login(process.env.TOKEN); */
+
 
 
 
