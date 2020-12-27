@@ -23,16 +23,17 @@ const welcome = require("./Cooked_code/Welcome/welcome")
 
 
 
+
+
 //Alert users that bot is online
 client.on('ready', () => {
 	console.log("Ready For Some Fun")
-
+	
 	// Channel IDs
 	const suzuGeneralChannel = client.channels.cache.get("743057030100549706");
 	const cookGeneralChannel = client.channels.cache.get("764948972036554793");
 	//cookGeneralChannel.send("I'm Online Sire")
-
-
+	
 	// initialize files
 	fun(client)
 	embed1(client)
@@ -44,6 +45,8 @@ client.on('ready', () => {
 	// veloxWelcome(client)
 });
 
+//login using bot token from env
+client.login(process.env.TOKEN);
 
 
 
