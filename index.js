@@ -25,7 +25,6 @@ const welcome = require("./Cooked_code/Welcome/welcome")
 
 
 
-
 //Alert users that bot is online
 client.on('ready', () => {
 	console.log("Ready For Some Fun")
@@ -53,7 +52,6 @@ client.login(process.env.TOKEN);
 
 
 //========================================   Bug Fixing   ========================================//
-
 // console.log(JSON.stringify(message))
 
 
