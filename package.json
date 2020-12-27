@@ -1,0 +1,16 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "It will be cool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CooKnBeats",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "giphy-api": "^2.0.1",
+    "giphy-js-sdk-core": "^1.0.6"
+  }
+}
