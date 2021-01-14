@@ -206,12 +206,14 @@ module.exports = client => {
 
 
 
+
+
     // Temp Use Insult
-    // client.on('message', message => {
-    //     if (message.content.toLocaleLowerCase() === 'fuck you miki') {
-    //         message.channel.send("Fuck Miki")
-    //     }
-    // });
+    client.on('message', message => {
+        if (message.content.toLocaleLowerCase() === "x") {
+            message.channel.send(`Me Too`)
+        }
+    });
 
 
 //==========================================   On Word Response   ==========================================//
