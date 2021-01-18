@@ -58,7 +58,7 @@ client.login(process.env.TOKEN);
 
 //======================================   Initialize   ======================================//
 // help
-let x = "Type: \n $Am I Cool - Return if you are cool \n $ping - Return 'Pong! \n $gif - Return a random gif \n Feel Free To Genji Ult (in 4 words) \n Say Something Bad \n $Meaning of life - Computes the meaning of your miserable life \n $tell me a secret - Lets you in on something juicy :smirk: \n $mission - Assigns you a mission"
+let x = "Type: \n $Am I Cool - Return if you are cool \n $gif - Return a random gif \n Feel Free To Genji Ult (in 4 words) \n Say Something Bad \n $Meaning of life - Computes the meaning of your miserable life \n $tell me a secret - Lets you in on something juicy :smirk: \n $mission - Assigns you a mission"
 
 
 client.on('message', message => {

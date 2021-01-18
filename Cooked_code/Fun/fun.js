@@ -1,14 +1,6 @@
 module.exports = client => {
 //==========================================   On Word Response   ==========================================//
 
-    // Ping Pong   Test
-    client.on('message', message => {
-        if (message.content.toLocaleLowerCase() === "$ping") {
-            message.channel.send("Pong!")
-            console.log("Pong Successful")
-        }
-    });
-
 
 
     // Are you Cool?   Test
