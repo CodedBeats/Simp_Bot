@@ -135,7 +135,6 @@ module.exports = client => {
 			const sooUbWay = "http://www.islandvisuals.com/images/products/display/12SB-7001-GRN.jpg"
 			
 			const welcomeEmbed = new Discord.MessageEmbed()
-			.setAuthor("Mad Lab", serverIcon)
 			.setColor("35363A")
 			.setThumbnail("https://cdn.discordapp.com/attachments/717586690041970688/802439752417935370/AllJointHatchetfish-max-1mb.gif")
 			.setTitle(`Welcome To Cook's Big And Still Yet Tiny Cock! :heart:`)
