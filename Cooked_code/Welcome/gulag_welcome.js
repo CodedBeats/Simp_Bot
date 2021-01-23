@@ -16,7 +16,7 @@ module.exports = client => {
 		.setAuthor("The Gulag", serverIcon)
 		.setColor("EE1111")
 		.setThumbnail(serverIcon)
-		.setTitle(`Welcome To Velox!`)
+		.setTitle(`Welcome To The Gulag!`)
         .setDescription(`Hey <@${member.id}>, Welcome To The Gulag \n 
 						Invite Your Friends](https://discord.gg/8GRd67Gd)`)
 		.addFields(
