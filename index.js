@@ -45,8 +45,10 @@ client.on('ready', () => {
 	// veloxWelcome(client)
 });
 
+
 //login using bot token from env
-client.login(process.env.TOKEN); 
+// client.login(process.env.TOKEN); 
+client.login(process.env.DJS_TOKEN);
 
 
 
