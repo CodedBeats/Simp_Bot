@@ -123,4 +123,44 @@ module.exports = client => {
 	});
 	*/
 
+
+
+	// Banner Test
+	/*
+	client.on('message', message => {
+		if (message.content.toLocaleLowerCase() === "welcome pm") {
+
+			const serverIcon = message.guild.iconURL();
+			const discordIcon = "https://i.imgur.com/r3tHleF.jpg"
+			const sooUbWay = "http://www.islandvisuals.com/images/products/display/12SB-7001-GRN.jpg"
+			
+			const welcomeEmbed = new Discord.MessageEmbed()
+			.setAuthor("Mad Lab", serverIcon)
+			.setColor("35363A")
+			.setThumbnail(serverIcon)
+			.setTitle(`Welcome To Cook's Big And Still Yet Tiny Cock! :heart:`)
+			.setDescription(`Hey <@${message.member.id}>....You're Cute :heart:`)
+			.addFields(
+				{
+					name: "Filler Text",
+					value: "Sup Buddy",
+					iniline: false,
+				},
+				)
+			.setImage("https://cdn.discordapp.com/attachments/717586690041970688/802428011261460510/kpHvqo.gif")
+			.setFooter("Footer Text", serverIcon)
+			.setTimestamp()
+			
+
+			message.author.send(welcomeEmbed)
+
+
+			console.log("Welcome PM Tested");
+			
+			// console.log(message.member);
+		};
+	});
+	*/
+	
+
 }

@@ -14,12 +14,11 @@ const client = new Discord.Client();
 // import files
 const fun = require("./Cooked_code/Fun/fun")
 const embed1 = require("./Cooked_code/Fun/embed1")
-const giphy = require("./Cooked_code/Giphy/giphy")
-const vc = require("./Cooked_code/VC_stuff/vc")
 const welcome = require("./Cooked_code/Welcome/welcome")
-// const gulagWelcome = require("./Cooked_code/Welcome/gulag_welcome")
+const gulagWelcome = require("./Cooked_code/Welcome/gulag_welcome")
 // const madlabWelcome = require("./Cooked_code/Welcome/madlab_welcome")
 // const veloxWelcome = require("./Cooked_code/Welcome/velox_welcome")
+// const vc = require("./Cooked_code/VC_stuff/vc")
 
 
 
@@ -37,10 +36,9 @@ client.on('ready', () => {
 	// initialize files
 	fun(client)
 	embed1(client)
-	giphy(client)
-	vc(client)
+	gulagWelcome(client)
 	welcome(client)
-	// gulagWelcome(client)
+	// vc(client)
 	// madlabWelcome(client)
 	// veloxWelcome(client)
 });
@@ -60,12 +58,12 @@ client.login(process.env.DJS_TOKEN);
 
 //======================================   Initialize   ======================================//
 // help
-let x = "Type: \n $Am I Cool - Return if you are cool \n $gif - Return a random gif \n Feel Free To Genji Ult (in 4 words) \n Say Something Bad \n $Meaning of life - Computes the meaning of your miserable life \n $tell me a secret - Lets you in on something juicy :smirk: \n $mission - Assigns you a mission"
+const functions = "Type: \n $Am I Cool - Return if you are cool \n $Tell Me A Secret: Lets you in on something juicy :smirk: \n Feel Free To Genji Ult (in 4 words) \n Say Something Bad \n $Meaning of life - Computes the meaning of your miserable life \n $mission - Assigns you a mission"
 
 
 client.on('message', message => {
 	if (message.content.toLocaleLowerCase() === "$help") {
-		message.channel.send(x)
+		message.channel.send(functions)
 		console.log("Options Previewed")
 	}
 });

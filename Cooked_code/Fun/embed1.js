@@ -4,7 +4,7 @@ module.exports = client => {
 //==========================================   Embed 1   ==========================================//
 
     client.on('message', message => {
-        if (message.content.toLocaleLowerCase() === "example embed") {
+        if (message.content.toLocaleLowerCase() === "$example embed") {
             
             const embed1 = new Discord.MessageEmbed()
             .setColor("4ECFE6")

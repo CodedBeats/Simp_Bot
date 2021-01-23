@@ -3,7 +3,7 @@ module.exports = client => {
 
 
 
-    // Are you Cool?   Test
+    // Are you Cool?   
     const cool = ["Yes!", "No!"];
     const coolChoices = ["$am i cool", "$am i cool?"]
 
@@ -19,7 +19,7 @@ module.exports = client => {
 
 
 
-    // Tell me a secret   Test
+    // Tell me a secret   
     const secrets = [
         "Black people aren't coloured because black isn't a colour. They are just shady :smirk:",
         "The way blind people know if they've wiped enough is by taste test",
@@ -45,7 +45,7 @@ module.exports = client => {
 
 
 
-    // Genji Meme   Test
+    // Genji Meme   
     // "Open the image in a new tab"
     client.on('message', message => {
         if (message.content.toLocaleLowerCase() === 'omae wa mou shindeiru') {
@@ -70,31 +70,7 @@ module.exports = client => {
 
 
 
-
-    //Giphs
-    let gif1 = "https://blog-assets.hootsuite.com/wp-content/uploads/2018/04/Nyan-Cat-GIF-source.gif"
-    let gif2 = "https://i.pinimg.com/originals/b5/5e/3b/b55e3bafe484a0ead34d5e3849bd1e11.gif"
-    let gif3 = "https://media0.giphy.com/media/yr7n0u3qzO9nG/giphy.gif"
-    let gif4 = "https://giphy.com/gifs/space-hello-LW5vBvAb48Oe9OoEKT"
-    let gif5 = "https://wp-modula.com/wp-content/uploads/2018/12/giphy-3.gif"
-    let gif6 = "https://thumbs.gfycat.com/FixedGivingFreshwatereel-size_restricted.gif"
-    let gif7 = "https://media1.giphy.com/media/WsvoCfsyL1mFeMmmDc/giphy.gif"
-    let gif8 = "https://www.retro-synthwave.com/wp-content/uploads/2016/10/retro-synthwave_GIF-01-32.gif"
-    const gifs = [gif1, gif2, gif3, gif4, gif5, gif6, gif7, gif8]
-
-    // Random Gif   Test
-    client.on('message', message => {
-        let chanceGif = gifs[Math.floor(Math.random() * 8)];
-        if (message.content.toLocaleLowerCase() === '$gif') {
-            message.channel.send(chanceGif)
-            console.log("Random gif sent")
-            console.log("We got " + chanceGif)
-        }
-    });
-
-
-
-    // Be Annoying    Test
+    // Meaning Of Life
     const errors = [
         "Yes", "Fuck you, you condecending, AI racist Fuck", "Please check your spelling", "Are you sure you can spell?", "Fuck off cxnt", "7 x 6", "Fuck you bro", 
     ]
@@ -111,7 +87,62 @@ module.exports = client => {
 
 
 
-    // Snipe User
+    
+    
+    
+    
+    
+    
+    // Bot sends quick message and then deletes it   
+    const missionsImpossible = [
+        "Good Day Agent A, your mission should you choose to accept it: **Retrieve The Crown**. This message will self destruct in 10 seconds",
+        "Good Day Agent B, your mission should you choose to accept it: **Defeat The Ender Dragon**. This message will self destruct in 10 seconds",
+        "Good Day Agent C, your mission should you choose to accept it: **Beat Vivian**. This message will self destruct in 10 seconds",
+        "Good Day Agent D, your mission should you choose to accept it: **End World Hunger**. This message will self destruct in 10 seconds",
+        "Good Day Agent E, your mission should you choose to accept it: **Graduate 6th Grade**. This message will self destruct in 10 seconds",
+        "Good Day Agent F, your mission should you choose to accept it: **Learn English, Sheesh**. This message will self destruct in 10 seconds",
+        "Good Day Agent G, your mission should you choose to accept it: **Get Good**. This message will self destruct in 10 seconds",
+        "Good Day Agent H, your mission should you choose to accept it: **||Fuck Hoes||**. This message will self destruct in 10 seconds",
+        // "Good Day Agent I, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent J, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent K, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent L, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent M, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent N, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent O, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent P, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent Q, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent R, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent S, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent T, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent U, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent V, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent W, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent X, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent Y, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        // "Good Day Agent Z, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+    ]
+    
+    
+    client.on('message', async message => {
+        const missionChances = missionsImpossible[Math.floor(Math.random() * missionsImpossible.length)];
+        if (message.content === "$mission") {
+            try {
+                const sentMessage = await message.channel.send(`${missionChances}`);
+                await sentMessage.delete({ timeout: 10000 });
+                // success
+                console.log("Mission Impossible")
+            } catch (error) {
+                // handle error
+                console.log("Something Went Wrong")
+            }
+        }
+    });
+    
+
+
+
+    // Insult Cook To Remind People I'm Alive
     const insultsLevel1 = [
         "Is your ass jealous of the amount of shit that just came out of your mouth?",
         "If you were a vegtable, you'd be a cabbitch",
@@ -128,6 +159,24 @@ module.exports = client => {
         "If laughter is the best medicine, your face must be curing the world",
         "does your mum get a fine for littering when she drops you off at school?",
         "If i wanted to kill myself, I'd climb your ego and drop to your iq",
+        "Why play so hard to get when you're already so hard to want?",
+        "You look like a before picture",
+        "You're impossible to underestimate",
+        "You are the human equivalent of a participation award",
+        "You're not pretty enough to be this stupid",
+        "You look like a visible fart",
+        "I have neither the time nor the crayons to explain it to you",
+        "You haven't been yourself lately. We've all noticed the improvement",
+        "Honey, you couldn't pour water out of a boot if the instructions were on the bottom",
+        "As an outsider, what is your perspective on intelligence?",
+        "Stupid people can believe in anything, so you can believe in yourself",
+        "I think we’ve all got something to bring to this discussion, and from now on I think the thing you should bring is silence",
+        "You are more disappointing than an unsalted pretzel",
+        "Somewhere in France, a cathedral is missing a gargoyle",
+        "You’re less a person and more a loose collection of personality flaws",
+        "Apologize to that tree over there for wasting the oxygen that it worked so hard to make",
+        "I hope you get run over by a parked car",
+        "Bob Ross would call you a mistake",
     ]
     const loveLevel1 = [
         "You mean the world to me",
@@ -140,73 +189,13 @@ module.exports = client => {
         const qookie = "395210449294983169";
         const holder = "000"
         let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
-        if (message.author.id === holder) {
-            if (Math.random() < .25) {
+        if (message.author.id === cookID) {
+            if (Math.random() < 0.01) {
                 message.channel.send(chanceInsults);
                 // message.channel.send("Im supposed to say something mean but i need suggestions");
                 console.log("insult delivered")
-            } else {
-                console.log("struck out")	
             }
         }
     });
-
-
-
-
-
-
-    // Bot sends quick message and then deletes it   Test
-    const missionsImpossible = [
-        "Good Day Agent A, your mission should you choose to accept it: **Retrieve The Crown**. This message will self destruct in 10 seconds",
-        "Good Day Agent B, your mission should you choose to accept it: **Defeat The Ender Dragon**. This message will self destruct in 10 seconds",
-        "Good Day Agent C, your mission should you choose to accept it: **Beat Vivian**. This message will self destruct in 10 seconds",
-        "Good Day Agent D, your mission should you choose to accept it: **End World Hunger**. This message will self destruct in 10 seconds",
-        "Good Day Agent E, your mission should you choose to accept it: **Graduate 6th Grade**. This message will self destruct in 10 seconds",
-        // "Good Day Agent F, your mission should you choose to accept it: ** **. This message will self destruct in 10 seconds",
-        // "Good Day Agent G, your mission should you choose to accept it: ** **. This message will self destruct in 10 seconds",
-        // "Good Day Agent H, your mission should you choose to accept it: ** **. This message will self destruct in 10 seconds",
-    ]
-
-
-    client.on('message', async message => {
-        const missionChances = missionsImpossible[Math.floor(Math.random() * missionsImpossible.length)];
-        if (message.content === "$mission") {
-            try {
-                const sentMessage = await message.channel.send(`${missionChances}`);
-                await sentMessage.delete({ timeout: 10000 });
-                // success
-                console.log("Mission Impossible")
-            } catch (error) {
-                // handle error
-                console.log("Something Went Wrong")
-            }
-        }
-    });
-
-
-
-
-    // PM Me
-    client.on('message', message => {
-        if (message.content.toLocaleLowerCase() === '$pm me') {
-            message.author.send("I'm Watching you")
-            console.log("Pm'd User")
-        }
-    });
-
-
-
-
-
-
-    // Temp Use Insult
-    client.on('message', message => {
-        if (message.content.toLocaleLowerCase() === "x") {
-            message.channel.send(`Me Too`)
-        }
-    });
-
-
-//==========================================   On Word Response   ==========================================//
+    //==========================================   On Word Response   ==========================================//
 };
