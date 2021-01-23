@@ -190,7 +190,7 @@ module.exports = client => {
         const holder = "000"
         let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
         if (message.author.id === cookID) {
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.02) {
                 message.channel.send(chanceInsults);
                 // message.channel.send("Im supposed to say something mean but i need suggestions");
                 console.log("insult delivered")

@@ -16,17 +16,10 @@ module.exports = client => {
 		.setAuthor("The Gulag", serverIcon)
 		.setColor("EE1111")
 		.setThumbnail(serverIcon)
+		.setTitle(`Welcome To Velox!`)
+        .setDescription(`Hey <@${member.id}>, Welcome To The Gulag \n 
+						Invite Your Friends](https://discord.gg/8GRd67Gd)`)
 		.addFields(
-			{
-				name: "The The Gulag",
-				value: `Hey <@${member.id}>, Welcome To The Gulag! \n
-				[Invite Your Friends](https://discord.gg/8GRd67Gd)`,
-				iniline: false,
-			},
-			// {
-			// 	name: "\u200B",
-			// 	value: "\u200B"
-			// },
 			{
 				name: "Getting Started?",
 				value: `Please Check Out Nothing Cause This Is The Gulag, You Will Find Out The Rules On Your Own`,
