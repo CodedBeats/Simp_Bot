@@ -126,7 +126,7 @@ module.exports = client => {
 
 
 	// Banner Test
-	/*
+	
 	client.on('message', message => {
 		if (message.content.toLocaleLowerCase() === "welcome pm") {
 
@@ -137,7 +137,7 @@ module.exports = client => {
 			const welcomeEmbed = new Discord.MessageEmbed()
 			.setAuthor("Mad Lab", serverIcon)
 			.setColor("35363A")
-			.setThumbnail(serverIcon)
+			.setThumbnail("https://cdn.discordapp.com/attachments/717586690041970688/802439752417935370/AllJointHatchetfish-max-1mb.gif")
 			.setTitle(`Welcome To Cook's Big And Still Yet Tiny Cock! :heart:`)
 			.setDescription(`Hey <@${message.member.id}>....You're Cute :heart:`)
 			.addFields(
@@ -160,7 +160,7 @@ module.exports = client => {
 			// console.log(message.member);
 		};
 	});
-	*/
+	
 	
 
 }

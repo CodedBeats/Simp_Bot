@@ -15,7 +15,7 @@ module.exports = client => {
 		const welcomeEmbed = new Discord.MessageEmbed()
 		.setAuthor("The Gulag", serverIcon)
 		.setColor("EE1111")
-		.setThumbnail(serverIcon)
+		.setThumbnail("https://cdn.discordapp.com/attachments/717586690041970688/802439752417935370/AllJointHatchetfish-max-1mb.gif")
 		.setTitle(`Welcome To The Gulag!`)
         .setDescription(`Hey <@${member.id}>, Welcome To The Gulag \n 
 						Invite Your Friends](https://discord.gg/8GRd67Gd)`)
