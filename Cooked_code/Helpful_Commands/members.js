@@ -5,7 +5,7 @@ module.exports = client => {
         if (message.content.toLowerCase() === "$member count") {
             let serverID = message.guild.id;
             let guild = client.guilds.cache.get(serverID)
-            let members = guild.memberCount // - 5
+            let members = guild.memberCount - 9
             // message.channel.send(`The ${message.guild.name} has ${members} members`)
             console.log("Server member count")
 
