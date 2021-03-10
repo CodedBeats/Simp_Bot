@@ -25,7 +25,7 @@ const members = require("./Cooked_code/Helpful_Commands/members")
 
 
 
-//Alert users that bot is online
+// Initialize bot
 client.on('ready', () => {
 	console.log("Ready For Some Fun")
 	
@@ -33,7 +33,21 @@ client.on('ready', () => {
 	const suzuGeneralChannel = client.channels.cache.get("743057030100549706");
 	const cookGeneralChannel = client.channels.cache.get("764948972036554793");
 	//cookGeneralChannel.send("I'm Online Sire")
+
+
+
+	// initialize live member count channel
+    let myGuid = client.guilds.cache.get("743057030100549702")
+    let myMemberCount = myGuid.memberCount
+    // console.log(myMemberCount)
+    let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
+    // console.log(memberCountChannel.name)
+    memberCountChannel.setName("Gulag Members: " + myMemberCount)
+    .then(result => console.log("Guild Mmembers Channel Is Live"))
+	.catch(error => console.log(error))
 	
+
+
 	// initialize files
 	fun(client)
 	embed1(client)
@@ -53,9 +67,24 @@ client.login(process.env.DJS_TOKEN);
 
 
 
-//========================================   Bug Fixing   ========================================//
-// console.log(JSON.stringify(message))
+//========================================   Member Count Channel   ========================================//
+client.on("guildMemberAdd", member => {
+    let myGuid = client.guilds.cache.get("731399692868649030")
+    let myMemberCount = myGuid.memberCount
+    let memberCountChannel = myGuid.channels.cache.get("818751101557407754")
+    memberCountChannel.setName("Members: " + myMemberCount)
+    .then(result => console.log("Gained a guild member"))
+    .catch(error => console.log(error))
+})
 
+client.on("guildMemberRemove", member => {
+    let myGuid = client.guilds.cache.get("731399692868649030")
+    let myMemberCount = myGuid.memberCount
+    let memberCountChannel = myGuid.channels.cache.get("818751101557407754")
+    memberCountChannel.setName("Members: " + myMemberCount)
+    .then(result => console.log("Lost a guild member"))
+    .catch(error => console.log(error))
+})
 
 
 //======================================   Initialize   ======================================//
