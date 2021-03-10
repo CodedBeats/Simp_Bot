@@ -70,18 +70,18 @@ client.login(process.env.DJS_TOKEN);
 
 //========================================   Member Count Channel   ========================================//
 client.on("guildMemberAdd", member => {
-    let myGuid = client.guilds.cache.get("731399692868649030")
+    let myGuid = client.guilds.cache.get("743057030100549702")
     let myMemberCount = myGuid.memberCount
-    let memberCountChannel = myGuid.channels.cache.get("818751101557407754")
+    let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
     memberCountChannel.setName("Gulag Members: " + myMemberCount)
     .then(result => console.log("Gained a guild member"))
     .catch(error => console.log(error))
 })
 
 client.on("guildMemberRemove", member => {
-    let myGuid = client.guilds.cache.get("731399692868649030")
+    let myGuid = client.guilds.cache.get("743057030100549702")
     let myMemberCount = myGuid.memberCount
-    let memberCountChannel = myGuid.channels.cache.get("818751101557407754")
+    let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
     memberCountChannel.setName("Gulag Members: " + myMemberCount)
     .then(result => console.log("Lost a guild member"))
     .catch(error => console.log(error))
