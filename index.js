@@ -13,10 +13,11 @@ const client = new Discord.Client();
 
 // import files
 const fun = require("./Cooked_code/Fun/fun")
-const embed1 = require("./Cooked_code/Fun/embed1")
 const welcome = require("./Cooked_code/Welcome/welcome")
 const gulagWelcome = require("./Cooked_code/Welcome/gulag_welcome")
+const hiBye = require("./Cooked_code/Helpful_Commands/hi-bye")
 const members = require("./Cooked_code/Helpful_Commands/members")
+// const embed1 = require("./Cooked_code/Fun/embed1")
 // const madlabWelcome = require("./Cooked_code/Welcome/madlab_welcome")
 // const veloxWelcome = require("./Cooked_code/Welcome/velox_welcome")
 // const vc = require("./Cooked_code/VC_stuff/vc")
@@ -51,10 +52,11 @@ client.on('ready', () => {
 
 	// initialize files
 	fun(client)
-	embed1(client)
 	welcome(client)
 	gulagWelcome(client)
+	hiBye(client)
 	members(client)
+	// embed1(client)
 	// vc(client)
 	// madlabWelcome(client)
 	// veloxWelcome(client)
