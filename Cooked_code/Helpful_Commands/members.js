@@ -28,7 +28,7 @@ module.exports = client => {
     
             const embed = new Discord.MessageEmbed()
             .setColor("RANDOM")
-            .setTitle("Servers With Project Continuum", '')
+            .setTitle("Servers With Simp Bot", '')
             .setDescription(serverlist)
             message.channel.send(embed);
         }
