@@ -181,6 +181,26 @@ module.exports = client => {
     const loveLevel1 = [
         "You mean the world to me",
         "you are way too ||sexy|| cool",
+        "If I know what love is, it is because of you",
+        "Pleasure of love lasts but a moment. Pain of love lasts a lifetime",
+        "Being alone is kind of nice. Being alone with you is better",
+        "Looking like a complete idiot with you is really fun",
+        "I would hang out with you even if you hadn’t showered for a month",
+        "I bet that sometimes you actually wake up flawless",
+        "You’re so hot, you make a dragon want to retire",
+        "If you cooked something really gross, I like you enough that I would tell you instead of politely eating it and hating everything",
+        "You have the face that I make on the Sims",
+        "It's so unfair! No matter how much I work out, I'll never have ankles as nice as yours! Fuck you!",
+        "You're the perfect amount of muscle covered in fat to be a really effective heat source",
+        "My gynecologist told me that I have a 'very pretty cervix",
+        "You're so cute. If we weren't dating other people, I'd be on you like flies on shit",
+        "Your aura is really strong...what did you do today",
+        "You're cute, but not in the attractive way",
+        "Wow, you have news anchor eyebrows",
+        "You always smell like fresh laundry",
+        "You're someone I'd want to see right before I die",
+        "You look like you're going to be a hot older woman",
+        "You're actually quite handsome, but I really don't know why",
         ""
     ]
 
@@ -189,11 +209,12 @@ module.exports = client => {
         const qookie = "395210449294983169";
         const holder = "000"
         let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
+        let chanceLove = loveLevel1[Math.floor(Math.random() * loveLevel1.length)];
         if (message.author.id === cookID) {
             if (Math.random() < 0.02) {
-                message.channel.send(chanceInsults);
+                message.channel.send(chanceLove);
                 // message.channel.send("Im supposed to say something mean but i need suggestions");
-                console.log("insult delivered")
+                console.log(`love delivered to ${message.author}`)
             }
         }
     });
