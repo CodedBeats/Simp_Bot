@@ -201,20 +201,19 @@ module.exports = client => {
         "You're someone I'd want to see right before I die",
         "You look like you're going to be a hot older woman",
         "You're actually quite handsome, but I really don't know why",
-        ""
     ]
 
     client.on('message', message => {
         const cookID = "376933393822121996";
         const qookie = "395210449294983169";
         const holder = "000"
-        let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
+        // let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
         let chanceLove = loveLevel1[Math.floor(Math.random() * loveLevel1.length)];
         if (message.author.id === cookID) {
             if (Math.random() < 0.02) {
                 message.channel.send(chanceLove);
                 // message.channel.send("Im supposed to say something mean but i need suggestions");
-                console.log(`love delivered to ${message.author}`)
+                console.log(`love delivered`)
             }
         }
     });
