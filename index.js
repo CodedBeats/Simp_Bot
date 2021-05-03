@@ -63,7 +63,7 @@ client.on('ready', () => {
 });
 
 
-//login using bot token from env
+// login using bot token from env
 // client.login(process.env.TOKEN); 
 client.login(process.env.DJS_TOKEN);
 
