@@ -17,6 +17,9 @@ const welcome = require("./Cooked_code/Welcome/welcome")
 const gulagWelcome = require("./Cooked_code/Welcome/gulag_welcome")
 const hiBye = require("./Cooked_code/Helpful_Commands/hi-bye")
 const members = require("./Cooked_code/Helpful_Commands/members")
+const userInformation = require("./Cooked_code/Helpful_Commands/user-information")
+const messageManipulation = require("./Cooked_code/Helpful_Commands/message-manipulation")
+const ping = require("./Cooked_code/Helpful_Commands/ping")
 // const embed1 = require("./Cooked_code/Fun/embed1")
 // const madlabWelcome = require("./Cooked_code/Welcome/madlab_welcome")
 // const veloxWelcome = require("./Cooked_code/Welcome/velox_welcome")
@@ -26,18 +29,15 @@ const members = require("./Cooked_code/Helpful_Commands/members")
 
 
 
-// Initialize bot
+//-----Initialize bot-----//
 client.on('ready', () => {
 	console.log("Ready For Some Fun")
 	
-	// Channel IDs
-	const suzuGeneralChannel = client.channels.cache.get("743057030100549706");
-	const cookGeneralChannel = client.channels.cache.get("764948972036554793");
 	//cookGeneralChannel.send("I'm Online Sire")
 
 
 
-	// initialize live member count channel
+	//-----initialize live member count channel-----//
     let myGuid = client.guilds.cache.get("743057030100549702")
 	let myMemberCount = myGuid.memberCount
 	myMemberCount = myMemberCount - 9;
@@ -50,12 +50,15 @@ client.on('ready', () => {
 	
 
 
-	// initialize files
+	//-----initialize files-----//
 	fun(client)
 	welcome(client)
 	gulagWelcome(client)
 	hiBye(client)
 	members(client)
+	userInformation(client)
+	messageManipulation(client)
+	ping(client)
 	// embed1(client)
 	// vc(client)
 	// madlabWelcome(client)
@@ -93,14 +96,14 @@ client.on("guildMemberRemove", member => {
 
 
 //======================================   Initialize   ======================================//
-// help
-const functions = "Type: \n $Am I Cool - Return if you are cool \n $Tell Me A Secret: Lets you in on something juicy :smirk: \n Feel Free To Genji Ult (in 4 words) \n Say Something Bad \n $Meaning of life - Computes the meaning of your miserable life \n $mission - Assigns you a mission"
+//-----help-----//
+const commands = "$Am I Cool - Returns if you are cool \n $Tell Me A Secret: Lets you in on something juicy :smirk: \n $Meaning of life - Computes the meaning of your miserable life \n $mission - Assigns you a mission \n $ping - Time in milliseconds for your computer to send a signal \n $avatar @user - Displays the image/gif the user has displayed \n $prune `int` - Delete messages between 2 and 100 (Only for Admins)"
 
 
 client.on('message', message => {
 	if (message.content.toLocaleLowerCase() === "$help") {
-		message.channel.send(functions)
-		console.log("Options Previewed")
+		message.channel.send(commands)
+		console.log("Commands Previewed")
 	}
 });
 
