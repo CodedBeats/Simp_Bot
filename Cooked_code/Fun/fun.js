@@ -93,7 +93,7 @@ module.exports = client => {
     
     
     
-    // Bot sends quick message and then deletes it   
+    // Bot sends mission and then deletes it   
     const missionsImpossible = [
         "Good Day Agent A, your mission should you choose to accept it: **Retrieve The Crown**. This message will self destruct in 10 seconds",
         "Good Day Agent B, your mission should you choose to accept it: **Defeat The Ender Dragon**. This message will self destruct in 10 seconds",
