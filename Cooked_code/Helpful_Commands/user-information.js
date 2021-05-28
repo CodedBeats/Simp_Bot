@@ -3,11 +3,6 @@ const commandsPrefix = "$"
 module.exports = client => {
 
 
-
-
-
-
-
     
 //=====================================   User's Avatar   =====================================//
     client.on("message", message => {
