@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = client => {
     client.on("message", message => {
-        if (message.content.toLowerCase() === "$member count") {
+        if (message.content.toLowerCase() === "$member count" || message.content.toLowerCase() === "$members") {
             let serverID = message.guild.id;
             let guild = client.guilds.cache.get(serverID)
             let members = guild.memberCount - 10;
