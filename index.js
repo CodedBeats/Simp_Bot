@@ -40,7 +40,7 @@ client.on('ready', () => {
 	//-----initialize live member count channel-----//
     let myGuid = client.guilds.cache.get("743057030100549702")
 	let myMemberCount = myGuid.memberCount
-	myMemberCount = myMemberCount - 9;
+	myMemberCount = myMemberCount - 10;
     // console.log(myMemberCount)
     let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
     // console.log(memberCountChannel.name)
