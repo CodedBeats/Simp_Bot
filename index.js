@@ -1,6 +1,6 @@
 //=========================================   Pre Load   =========================================//
 // set max individual actions greater than default [10]
-require('events').EventEmitter.defaultMaxListeners = 20;
+require('events').EventEmitter.defaultMaxListeners = 25;
 
 // pre-load the apropriates
 const Discord = require('discord.js');
