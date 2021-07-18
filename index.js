@@ -53,7 +53,6 @@ client.on('ready', () => {
 
 	//-----initialize files-----//
 	fun(client)
-	welcome(client)
 	gulagWelcome(client)
 	findUsers(client)
 	hiBye(client)
@@ -61,6 +60,7 @@ client.on('ready', () => {
 	userInformation(client)
 	messageManipulation(client)
 	ping(client)
+	// welcome(client)
 	// embed1(client)
 	// vc(client)
 	// madlabWelcome(client)
