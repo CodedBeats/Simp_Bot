@@ -49,6 +49,7 @@ module.exports = client => {
     }
     
     // dungeon roles
+    /*
     emojiText += `\n **DUNGEON PERMISSION 18+** \n • For those who seek the cursed and horny random contents in here..Please enter at your own risk.. \n`
     for (const key in dungeonEmojis) {
         const emoji = getEmoji(key)
@@ -58,6 +59,7 @@ module.exports = client => {
         const role = guild.roles.cache.find(role => role.name === dungeonEmojis[key]);
         emojiText += `${emoji} = ${role}\n`
     }
+    */
     
     // Looking for party roles
     emojiText += `\n **LOOKING FOR PARTY/CO-OP PINGS** \n • Claim these roles if you're tired of being a loner \n (For those who claim these roles you will most likely receive pings often) \n`
@@ -109,7 +111,7 @@ module.exports = client => {
         UwUreaper: 'Overwatch LFP',
         maeve: 'Paladins LFP',
         reaperflag: 'Sea of Thieves LFP',
-        alertexclamation: 'Foot Soldier',
+        // alertexclamation: 'Foot Soldier',
         partay: 'Event Ping',
         blobgift: 'Giveaways',
         pingTicket: 'Movie Night',
