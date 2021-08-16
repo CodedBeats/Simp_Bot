@@ -30,7 +30,7 @@ module.exports = client => {
         owlogo: 'Overwatch',
         paladins: 'Paladins',
         Sea_Of_Thieves: 'Sea of Thieves',
-        minecraft: "Minecraft",
+        minecraft: "Minecraft+Terraria",
     }
 
     // create reactions for final message
@@ -105,7 +105,7 @@ module.exports = client => {
         owlogo: 'Overwatch',
         paladins: 'Paladins',
         Sea_Of_Thieves: 'Sea of Thieves',
-        minecraft: "Minecraft",
+        minecraft: "Minecraft+Terraria",
         kianashake: 'Honkai Impact LFP',
         Klee: 'Genshin Impact LFP',
         UwUreaper: 'Overwatch LFP',
