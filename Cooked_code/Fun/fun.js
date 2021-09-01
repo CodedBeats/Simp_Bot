@@ -209,11 +209,11 @@ module.exports = client => {
         const holder = "000"
         // let chanceInsults = insultsLevel1[Math.floor(Math.random() * insultsLevel1.length)];
         let chanceLove = loveLevel1[Math.floor(Math.random() * loveLevel1.length)];
-        if (message.author.id === cookID) {
+        if (message.author.id === holder) {
             if (Math.random() < 0.02) {
                 message.channel.send(chanceLove);
                 // message.channel.send("Im supposed to say something mean but i need suggestions");
-                console.log(`love delivered`)
+                console.log(``)
             }
         }
     });
