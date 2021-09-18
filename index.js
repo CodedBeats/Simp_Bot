@@ -33,7 +33,7 @@ const roleClaim = require("./Cooked_code/Roles/gulagRoleClaim")
 
 //-----Initialize bot-----//
 client.on('ready', () => {
-	console.log("Ready For Some Fun")
+	console.log("Ready For Some Fun (19/9/21)")
 	
 	//cookGeneralChannel.send("I'm Online Sire")
 
@@ -63,10 +63,8 @@ client.on('ready', () => {
 	ping(client)
 	roleClaim(client)
 	// welcome(client)
-	// embed1(client)
 	// vc(client)
 	// madlabWelcome(client)
-	// veloxWelcome(client)
 });
 
 
