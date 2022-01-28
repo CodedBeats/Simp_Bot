@@ -33,7 +33,7 @@ const roleClaim = require("./Cooked_code/Roles/gulagRoleClaim")
 
 //-----Initialize bot-----//
 client.on('ready', () => {
-	console.log("Ready For Some Fun (19/9/21)")
+	console.log("Ready For Some Fun (29/1/22)")
 	
 	//cookGeneralChannel.send("I'm Online Sire")
 
@@ -42,7 +42,7 @@ client.on('ready', () => {
 	//-----initialize live member count channel-----//
     let myGuid = client.guilds.cache.get("743057030100549702")
 	let myMemberCount = myGuid.memberCount
-	myMemberCount = myMemberCount - 10;
+	myMemberCount = myMemberCount - 11;
     // console.log(myMemberCount)
     let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
     // console.log(memberCountChannel.name)
