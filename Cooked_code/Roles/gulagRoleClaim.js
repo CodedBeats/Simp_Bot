@@ -97,7 +97,7 @@ module.exports = client => {
     // initialize first message with parameters
     firstMessage(client, channelID, exampleEmbed, reactions)
 
-    // redefine all emojis just for handle reaction functio
+    // redefine all emojis just for handle reaction function
     const emojis = {
         HonkaiImpact3rd: 'Honkai Impact',
         Paimon: 'Genshin Impact',

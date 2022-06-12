@@ -218,5 +218,12 @@ module.exports = client => {
         }
     });
 
+    // test code
+    client.on('message', message => {
+        if (message.content.toLocaleLowerCase() === '$updated?') {
+            message.channel.send("The bot updated");
+        }
+    });
+
     //==========================================   On Word Response   ==========================================//
 };
