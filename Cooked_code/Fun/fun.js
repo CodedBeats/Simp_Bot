@@ -222,6 +222,7 @@ module.exports = client => {
     client.on('message', message => {
         if (message.content.toLocaleLowerCase() === '$updated?') {
             message.channel.send("The bot updated");
+            console.log("updated?")
         }
     });
 
