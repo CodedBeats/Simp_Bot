@@ -218,6 +218,7 @@ module.exports = client => {
         }
     });
 
+
     // test code
     // client.on('message', message => {
     //     if (message.content.toLocaleLowerCase() === '$updated?') {
@@ -226,5 +227,6 @@ module.exports = client => {
     //     }
     // });
 
+    
     //==========================================   On Word Response   ==========================================//
 };
