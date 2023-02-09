@@ -98,7 +98,7 @@ client.on("guildMemberRemove", member => {
 
 
 //======================================   Initialize   ======================================//
-//-----help-----//
+//-----Bot Commands-----//
 const commands = "$Am I Cool - Returns if you are cool \n $Tell Me A Secret: Lets you in on something juicy :smirk: \n $Meaning of life - Computes the meaning of your miserable life \n $mission - Assigns you a mission \n $ping - Time in milliseconds for your computer to send a signal \n $avatar @user - Displays the image/gif the user has displayed \n $member count - Displays how many members in this server \n $bot servers - Displays what servers the bot is in \n $prune `int` - Delete messages between 2 and 100 (Only for Admins)"
 
 
