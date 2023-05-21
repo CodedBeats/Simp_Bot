@@ -102,25 +102,7 @@ module.exports = client => {
         "Good Day Agent E, your mission should you choose to accept it: **Graduate 6th Grade**. This message will self destruct in 10 seconds",
         "Good Day Agent F, your mission should you choose to accept it: **Learn English, Sheesh**. This message will self destruct in 10 seconds",
         "Good Day Agent G, your mission should you choose to accept it: **Get Good**. This message will self destruct in 10 seconds",
-        "Good Day Agent H, your mission should you choose to accept it: **||Fuck Hoes||**. This message will self destruct in 10 seconds",
-        // "Good Day Agent I, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent J, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent K, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent L, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent M, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent N, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent O, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent P, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent Q, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent R, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent S, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent T, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent U, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent V, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent W, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent X, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent Y, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
-        // "Good Day Agent Z, your mission should you choose to accept it: ****. This message will self destruct in 10 seconds",
+        "Good Day Agent H, your mission should you choose to accept it: **||Fuck Hoes||**. This message will self destruct in 10 seconds"
     ]
     
     
