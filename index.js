@@ -13,7 +13,6 @@ const client = new Discord.Client();
 
 // import files
 const fun = require("./Cooked_code/Fun/fun")
-const welcome = require("./Cooked_code/Welcome/welcome")
 const gulagWelcome = require("./Cooked_code/Welcome/gulag_welcome")
 const findUsers = require("./Cooked_code/Helpful_Commands/find-user")
 const hiBye = require("./Cooked_code/Helpful_Commands/hi-bye")
@@ -21,7 +20,7 @@ const members = require("./Cooked_code/Helpful_Commands/members")
 const userInformation = require("./Cooked_code/Helpful_Commands/user-information")
 const messageManipulation = require("./Cooked_code/Helpful_Commands/message-manipulation")
 const ping = require("./Cooked_code/Helpful_Commands/ping")
-const roleClaim = require("./Cooked_code/Roles/gulagRoleClaim")
+// const roleClaim = require("./Cooked_code/Roles/gulagRoleClaim")
 // const embed1 = require("./Cooked_code/Fun/embed1")
 // const madlabWelcome = require("./Cooked_code/Welcome/madlab_welcome")
 // const veloxWelcome = require("./Cooked_code/Welcome/velox_welcome")
@@ -42,7 +41,7 @@ client.on('ready', () => {
 	//-----initialize live member count channel-----//
     let myGuid = client.guilds.cache.get("743057030100549702")
 	let myMemberCount = myGuid.memberCount
-	myMemberCount = myMemberCount - 11;
+	myMemberCount = myMemberCount - 10;
     // console.log(myMemberCount)
     let memberCountChannel = myGuid.channels.cache.get("819021393810817024")
     // console.log(memberCountChannel.name)
@@ -61,7 +60,6 @@ client.on('ready', () => {
 	userInformation(client)
 	messageManipulation(client)
 	ping(client)
-	roleClaim(client)
 	// welcome(client)
 	// vc(client)
 	// madlabWelcome(client)
@@ -112,5 +110,5 @@ client.on('message', message => {
 
 
 //======================================   Deployment Update   ======================================//
-// Times Deployed: 2
+// Times Deployed: 3
 
