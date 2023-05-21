@@ -7,7 +7,7 @@ module.exports = client => {
 	const gulagWelcomeChannel = "743060106996088843";
 	
 	// Will need its own discord bot for a specialised welcome
-	client.on("guildMemberAdd", member => {
+	client.on("guildMemberAdd", (member) => {
 		
 		const serverIcon = member.guild.iconURL();
 		
@@ -25,5 +25,4 @@ module.exports = client => {
 		console.log("Welcomed Gulag User");
 		// console.log(member);
 	});
-	
 }
